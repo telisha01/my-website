@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TB Digital Studio - Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f5f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e0dcd5;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #dcd6cb;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            margin: 40px auto;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        button {
+            background-color: #c4b9a7;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #b3a58f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TB Digital Studio</h1>
+        <p>Your Creative Marketing Partner</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Place Your Order</h2>
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@tbdigitalstudio.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+264 81 123 4567" required>
+
+        <label for="service">Select a Service</label>
+        <select id="service" name="service" required>
+            <option value="">-- Choose a Service --</option>
+            <option value="socialmedia">Social Media Management</option>
+            <option value="branding">Brand Identity Design</option>
+            <option value="promotion">Event Promotion</option>
+        </select>
+
+        <label for="details">Project Details</label>
+        <textarea id="details" name="details" rows="5" placeholder="Describe your project..."></textarea>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>
